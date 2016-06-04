@@ -17,13 +17,13 @@ namespace BaiTest
             tbNumber.Text = result.ToString();
         }
 
-        public int Calculate(int numberial)
+        public int Calculate(int _num)
         {
             try
             {
                 int n = 1;
                 int needNumbers = 0;
-                for (int i = 10000; n <= numberial; i++)
+                for (int i = 10000; n <= _num; i++)
                 {
                     string strNumber = i.ToString();
 
@@ -37,7 +37,7 @@ namespace BaiTest
                     {
                         n++;
                     }
-                    if (n == numberial)
+                    if (n == _num)
                     {
                         needNumbers = i;
                     }
